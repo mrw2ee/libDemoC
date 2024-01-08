@@ -1,0 +1,32 @@
+name: libdev
+channels:
+  - intel
+  - anaconda
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h1de35cc_0
+  - c-ares=1.19.1=h6c40b1e_0
+  - ca-certificates=2023.12.12=hecd8cb5_0
+  - cmake=3.26.4=hbb7d193_0
+  - expat=2.5.0=hcec6c5f_0
+  - intel-openmp=2023.1.0=ha357a0b_43548
+  - krb5=1.20.1=h428f121_1
+  - libcurl=7.88.1=hf20ceda_2
+  - libcxx=14.0.6=h9765a3e_0
+  - libedit=3.1.20230828=h6c40b1e_0
+  - libev=4.33=h9ed2024_1
+  - libnghttp2=1.57.0=h9beae6a_0
+  - libssh2=1.10.0=h04015c4_2
+  - libuv=1.44.2=h6c40b1e_0
+  - lz4-c=1.9.4=hcec6c5f_0
+  - mkl=2023.1.0=h8e150cf_43560
+  - mkl-include=2023.2.1=intel_5
+  - mkl-static=2023.2.1=intel_5
+  - ncurses=6.4=hcec6c5f_0
+  - openssl=3.0.12=hca72f7f_0
+  - rhash=1.4.3=h04015c4_0
+  - tbb=2021.8.0=ha357a0b_0
+  - xz=5.4.5=h6c40b1e_0
+  - zlib=1.2.13=h4dc903c_0
+  - zstd=1.5.5=hc035e20_0
+prefix: /Users/mikie/anaconda3/envs/libdev
