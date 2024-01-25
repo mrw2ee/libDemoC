@@ -40,7 +40,7 @@ message("MATH_LIB_SELECTED = ${MATH_LIB_SELECTED}")
 # This library links to BLAS routines which may be 3rd-party libraries or hand-written code. The distinction should not matter to future targets linking to this library. However, CMake distinguishes compiled libraries (i.e. hand-written code) from header-only libraries (e.g. Intel MKL). In the following we must determine  whether this library is compiled or simply an INTERFACE (in CMake terminology). Setting preprocessor directives and shared  header directories here, users need only link to this Target. 
 if(MATH_LIB_SELECTED MATCHES 0)
     message("Hand-written BLAS")
-    add_library(${TARGET} mathlib.c mathlib.h)
+    add_library(${TARGET} STATIC mathlib.c mathlib.h)
     set(ACCESS_SPECIFICATION PUBLIC)
     
 else()

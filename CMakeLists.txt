@@ -1,3 +1,4 @@
+
 cmake_minimum_required(VERSION 3.13)
 
 # Set the version number for the library
@@ -12,6 +13,7 @@ project(libDemo
 
 add_subdirectory(src)
 
-add_executable(myapp app.c)
+add_subdirectory(python)
 
-target_link_libraries(myapp PUBLIC blas_lib)
+add_subdirectory(exe)
+
