@@ -41,8 +41,15 @@ From the build folder, the python module can be installed using ```pip``` with
 ```
 pip install ..
 ```
-
-the package can be uninstalled using
+The package can then be used in Python
 ```
-pip uninstall  scikit_build_example
+python3
+>>> import lib_demo
+>>> lib_demo.cblas_dasum(1,-4,0)
+```
+Note, pybind11 does not automatically interpret pointers as arrays. So, memory-efficient wrappers should be written for BLAS routines.
+
+The custom package can be uninstalled using
+```
+pip uninstall  lib_demo
 ```
